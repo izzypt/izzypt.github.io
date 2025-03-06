@@ -27,14 +27,13 @@
                     A fullstack Web Developer.
                 </h1>
                 <p>
-                    Welcome to my personal page! Get to know me better <br/>
-                    
+                    Welcome to my personal page!<br/> 
                 </p>
                 <p>
                     
                 </p>
                 <div class="btn-con">
-                    <a href="https://drive.google.com/uc?export=download&id=1hPDZ8J_F5K5q2Xsakgb7PgX51SFSgm7n" download rel="nofollow noopener" class="main-btn">
+                    <a href="/downloads/cv.pdf" class="main-btn" download rel="nofollow noopener">
                         <span class="btn-text">Download CV</span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
@@ -51,9 +50,11 @@
                 <div class="left-about">
                     <h4>Information About me</h4>
                     <p>
-                        I have over 2 years of professinal experience as a full stack developer
-                        I became a developer after a lot of study and being a student at 42 Lisbon.
-                        <br /> <br /> I have worked with some very different technologies so far, but mostly I have been working with JavaScript frameworks like React/Vue and Python/Django on the backend.
+                        I have over 3 years of professinal experience with software engineering.
+                        Personal projects and studying software engineerning at 42 Lisbon helped me start out.
+                        <br /> <br /> I have worked with some very different technologies so far, but mostly I have been working with JavaScript frameworks like React/Vue and Python/Django on the backend.</p><br />
+
+                        For production I have been working with AWS and Docker, Kubernetes, Helm, among others.
                     </p>
                     <div class="btn-con">
                         <a href="https://drive.google.com/uc?export=download&id=1E86QsMdrA62CObptRyr0zB-6MXYIN3N-" class="main-btn">
@@ -65,13 +66,13 @@
                 <div class="right-about">
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">2</p>
+                            <p class="large-text">4</p>
                             <p class="small-text">Projects <br /> Completed</p>
                         </div>
                     </div>
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">2+</p>
+                            <p class="large-text">4+</p>
                             <p class="small-text">Years of <br /> experience</p>
                         </div>
                     </div>
@@ -102,7 +103,7 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">Vuetify</p>
+                        <p class="prog-title">Unix</p>
                         <div class="progress-con">
                             <p class="prog-text">95%</p>
                             <div class="progress">
@@ -111,7 +112,7 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
+                        <p class="prog-title">Docker</p>
                         <div class="progress-con">
                             <p class="prog-text">80%</p>
                             <div class="progress">
@@ -155,10 +156,20 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">Currently</p>
-                    <h5>FullStack Developer<span> - Freelancing</span></h5>
+                    <h5>Software Engineer<span> - Eigen Technologies</span></h5>
                     <p>
-                        I'am currently working as freelancer providing full products built as a service.<br/>
-                        Most projects are defined on the clients needs. So far I have built e-commerce shops and helped building SaaS applications..
+                        At Eigen, I'am closer to the production and delivery, maintenaince and client communication<br/>
+                        I have been working with technologies like Docker, kubernetes, helm, python, django,among others...
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2023-2024</p>
+                    <h5>FullStack Developer<span> - Streambow</span></h5>
+                    <p>
+                        Helped developing Quality of Service (QoS) and Quality of Experience (QoE) solutions such as diagonostic network tests using C programming language for different gateways.<br/>
                     </p>
                 </div>
                 <div class="timeline-item">
@@ -170,17 +181,6 @@
                     <p>
                         At LinkThings I helped out building 2 projects of the company.<br/>
                         My main responsabilities were building the frontend and the backend parts of the application, using the Vue and Django (among others).
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2020</p>
-                    <h5>Analyst<span> - Accenture</span></h5>
-                    <p>
-                        Worked as an analyst at Accenture, working with a well known client, on a project where my role consisted on
-                        analyzing, reviewing and applying the clients policies. I also got to practice some of my programming skills there building a simple app to help out my colleagues.
                     </p>
                 </div>
         </section>
@@ -595,25 +595,25 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" class="contact-form">
+                        <form id="contactForm" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
+                                <input type="text" id="name" required placeholder="YOUR NAME">
+                                <input type="email" id="email" required placeholder="YOUR EMAIL">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
+                                <input type="text" id="subject" required placeholder="ENTER SUBJECT">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                                <textarea id="message" cols="15" rows="8" placeholder="Message Here..." required></textarea>
                             </div>
-                            <div class="submit-btn" id="sendEmailButton">
-                                <a href="#" class="main-btn" style="margin-left:1rem">
+                            <div class="submit-btn">
+                                <button type="submit" class="main-btn" style="margin-left:1rem">
                                     <span class="btn-text">Send</span>
                                     <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
-                                </a>
+                                </button>
                             </div>
                         </form>
-                    </div>
+                    </div>                   
                 </div>
             </div>
         </section>
@@ -640,6 +640,6 @@
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
-    <script src="app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
